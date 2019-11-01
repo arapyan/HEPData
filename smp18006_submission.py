@@ -14,6 +14,10 @@ from hepdata_lib import Variable
 import numpy as np
 submission = Submission()
 
+sig_digits = 3
+sig_digits2 = 2
+
+
 submission.read_abstract("HEPData/inputs/smp18006/abstract.txt")
 submission.add_link("Webpage with all figures and tables", "http://cms-results.web.cern.ch/cms-results/public-results/publications/SMP-18-006/index.html")
 submission.add_link("arXiv", "http://arxiv.org/abs/arXiv:1905.07445")
@@ -131,34 +135,37 @@ obs_limits = Variable("Cross section", is_independent=False, is_binned=False, un
 obs_limits.values = data_limits[1,:]
 obs_limits.add_qualifier("Cross section limits", "Observed limits")
 obs_limits.add_qualifier("SQRT(S)", 13, "TeV")
+obs_limits.digits = sig_digits
 
 exp_limits = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 exp_limits.values = data_limits[2,:]
 exp_limits.add_qualifier("Cross section limits", "Expected limits")
 exp_limits.add_qualifier("SQRT(S)", 13, "TeV")
-
+exp_limits.digits = sig_digits
 
 plus1sigma_limits = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 plus1sigma_limits.values = data_limits[3,:]
 plus1sigma_limits.add_qualifier("Cross section limits", "+1 sigma limits")
 plus1sigma_limits.add_qualifier("SQRT(S)", 13, "TeV")
-
+plus1sigma_limits.digits = sig_digits
 
 minus1sigma_limits = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 minus1sigma_limits.values = data_limits[4,:]
 minus1sigma_limits.add_qualifier("Cross section limits", "-1 sigma limits")
 minus1sigma_limits.add_qualifier("SQRT(S)", 13, "TeV")
+minus1sigma_limits.digits = sig_digits
 
 plus2sigma_limits = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 plus2sigma_limits.values = data_limits[5,:]
 plus2sigma_limits.add_qualifier("Cross section limits", "+2 sigma limits")
 plus2sigma_limits.add_qualifier("SQRT(S)", 13, "TeV")
+plus2sigma_limits.digits = sig_digits
 
 minus2sigma_limits = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 minus2sigma_limits.values = data_limits[6,:]
 minus2sigma_limits.add_qualifier("Cross section limits", "-2 sigma limits")
 minus2sigma_limits.add_qualifier("SQRT(S)", 13, "TeV")
-
+minus2sigma_limits.digits = sig_digits
 
 table_limits.add_variable(mass_limits)
 table_limits.add_variable(obs_limits)
@@ -193,34 +200,37 @@ obs_limits2 = Variable("Cross section", is_independent=False, is_binned=False, u
 obs_limits2.values = data_limits2[1,:]
 obs_limits2.add_qualifier("Cross section limits", "Observed limits")
 obs_limits2.add_qualifier("SQRT(S)", 13, "TeV")
+obs_limits2.digits = sig_digits
 
 exp_limits2 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 exp_limits2.values = data_limits2[2,:]
 exp_limits2.add_qualifier("Cross section limits", "Expected limits")
 exp_limits2.add_qualifier("SQRT(S)", 13, "TeV")
-
+exp_limits2.digits = sig_digits
 
 plus1sigma_limits2 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 plus1sigma_limits2.values = data_limits2[3,:]
 plus1sigma_limits2.add_qualifier("Cross section limits", "+1 sigma limits")
 plus1sigma_limits2.add_qualifier("SQRT(S)", 13, "TeV")
-
+plus1sigma_limits2.digits = sig_digits
 
 minus1sigma_limits2 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 minus1sigma_limits2.values = data_limits2[4,:]
 minus1sigma_limits2.add_qualifier("Cross section limits", "-1 sigma limits")
 minus1sigma_limits2.add_qualifier("SQRT(S)", 13, "TeV")
+minus1sigma_limits2.digits = sig_digits
 
 plus2sigma_limits2 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 plus2sigma_limits2.values = data_limits2[5,:]
 plus2sigma_limits2.add_qualifier("Cross section limits", "+2 sigma limits")
 plus2sigma_limits2.add_qualifier("SQRT(S)", 13, "TeV")
+plus2sigma_limits2.digits = sig_digits
 
 minus2sigma_limits2 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 minus2sigma_limits2.values = data_limits2[6,:]
 minus2sigma_limits2.add_qualifier("Cross section limits", "-2 sigma limits")
 minus2sigma_limits2.add_qualifier("SQRT(S)", 13, "TeV")
-
+minus2sigma_limits2.digits = sig_digits
 
 table_limits2.add_variable(mass_limits2)
 table_limits2.add_variable(obs_limits2)
@@ -255,33 +265,37 @@ obs_limits3 = Variable("Cross section", is_independent=False, is_binned=False, u
 obs_limits3.values = data_limits3[1,:]
 obs_limits3.add_qualifier("Cross section limits", "Observed limits")
 obs_limits3.add_qualifier("SQRT(S)", 13, "TeV")
+obs_limits3.digits = sig_digits
 
 exp_limits3 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 exp_limits3.values = data_limits3[2,:]
 exp_limits3.add_qualifier("Cross section limits", "Expected limits")
 exp_limits3.add_qualifier("SQRT(S)", 13, "TeV")
-
+exp_limits3.diits = sig_digits
 
 plus1sigma_limits3 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 plus1sigma_limits3.values = data_limits3[3,:]
 plus1sigma_limits3.add_qualifier("Cross section limits", "+1 sigma limits")
 plus1sigma_limits3.add_qualifier("SQRT(S)", 13, "TeV")
-
+plus1sigma_limits3.digits = sig_digits
 
 minus1sigma_limits3 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 minus1sigma_limits3.values = data_limits3[4,:]
 minus1sigma_limits3.add_qualifier("Cross section limits", "-1 sigma limits")
 minus1sigma_limits3.add_qualifier("SQRT(S)", 13, "TeV")
+minus1sigma_limits3.digits = sig_digits
 
 plus2sigma_limits3 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 plus2sigma_limits3.values = data_limits3[5,:]
 plus2sigma_limits3.add_qualifier("Cross section limits", "+2 sigma limits")
 plus2sigma_limits3.add_qualifier("SQRT(S)", 13, "TeV")
+plus2sigma_limits3.digits = sig_digits
 
 minus2sigma_limits3 = Variable("Cross section", is_independent=False, is_binned=False, units="pb")
 minus2sigma_limits3.values = data_limits3[6,:]
 minus2sigma_limits3.add_qualifier("Cross section limits", "-2 sigma limits")
 minus2sigma_limits3.add_qualifier("SQRT(S)", 13, "TeV")
+minus2sigma_limits3.digits = sig_digits
 
 
 table_limits3.add_variable(mass_limits3)
@@ -317,34 +331,37 @@ obs_limits4 = Variable("$s_{\mathrm{H}}$", is_independent=False, is_binned=False
 obs_limits4.values = data_limits4[1,:]
 obs_limits4.add_qualifier("$s_{\mathrm{H}}$ limits", "Observed limits")
 obs_limits4.add_qualifier("SQRT(S)", 13, "TeV")
+obs_limits4.digits = sig_digits2
 
 exp_limits4 = Variable("$s_{\mathrm{H}}$", is_independent=False, is_binned=False, units="")
 exp_limits4.values = data_limits4[2,:]
 exp_limits4.add_qualifier("$s_{\mathrm{H}}$ limits", "Expected limits")
 exp_limits4.add_qualifier("SQRT(S)", 13, "TeV")
-
+exp_limits4.digits = sig_digits2
 
 plus1sigma_limits4 = Variable("$s_{\mathrm{H}}$", is_independent=False, is_binned=False, units="")
 plus1sigma_limits4.values = data_limits4[3,:]
 plus1sigma_limits4.add_qualifier("$s_{\mathrm{H}}$ limits", "+1 sigma limits")
 plus1sigma_limits4.add_qualifier("SQRT(S)", 13, "TeV")
-
+plus1sigma_limits4.digits = sig_digits2
 
 minus1sigma_limits4 = Variable("$s_{\mathrm{H}}$", is_independent=False, is_binned=False, units="")
 minus1sigma_limits4.values = data_limits4[4,:]
 minus1sigma_limits4.add_qualifier("$s_{\mathrm{H}}$ limits", "-1 sigma limits")
 minus1sigma_limits4.add_qualifier("SQRT(S)", 13, "TeV")
+minus1sigma_limits4.digits = sig_digits2
 
 plus2sigma_limits4 = Variable("$s_{\mathrm{H}}$", is_independent=False, is_binned=False, units="")
 plus2sigma_limits4.values = data_limits4[5,:]
 plus2sigma_limits4.add_qualifier("$s_{\mathrm{H}}$ limits", "+2 sigma limits")
 plus2sigma_limits4.add_qualifier("SQRT(S)", 13, "TeV")
+plus2sigma_limits4.digits = sig_digits2
 
 minus2sigma_limits4 = Variable("$s_{\mathrm{H}}$", is_independent=False, is_binned=False, units="")
 minus2sigma_limits4.values = data_limits4[6,:]
 minus2sigma_limits4.add_qualifier("$s_{\mathrm{H}}$ limits", "-2 sigma limits")
 minus2sigma_limits4.add_qualifier("SQRT(S)", 13, "TeV")
-
+minus2sigma_limits4.digits = sig_digits2
 
 table_limits4.add_variable(mass_limits4)
 table_limits4.add_variable(obs_limits4)
@@ -382,6 +399,7 @@ mmed_wv.values = histo_vjet_wv["x"]
 # y-axis: N events
 data_wv = Variable("Number of data events", is_independent=False, is_binned=False, units="")
 data_wv.values = histo_data_wv["y"]
+data_wv.digits = sig_digits
 
 #unc_data_wv = Uncertainty("Poisson errors", is_symmetric=True)
 #unc_data_wv.values = histo_data_wv["dy"]
@@ -389,21 +407,27 @@ data_wv.values = histo_data_wv["y"]
 
 vvjjqcd_wv = Variable("Number of QCD VV events", is_independent=False, is_binned=False, units="")
 vvjjqcd_wv.values = histo_vvjjqcd_wv["y"]
+vvjjqcd_wv.digits = sig_digits
 
 vjet_wv = Variable("Number of V+jets events", is_independent=False, is_binned=False, units="")
 vjet_wv.values = histo_vjet_wv["y"]
+vjet_wv.digits = sig_digits
 
 vvjj_wv = Variable("Number of SM EV VV events", is_independent=False, is_binned=False, units="")
 vvjj_wv.values = histo_vvjj_wv["y"]
+vvjj_wv.digits = sig_digits
 
 top_wv = Variable("Number of top quark events", is_independent=False, is_binned=False, units="")
 top_wv.values = histo_top_wv["y"]
+top_wv.digits = sig_digits
 
 background_wv = Variable("Number of background events", is_independent=False, is_binned=False, units="")
 background_wv.values = histo_bkg_wv["y"]
+background_wv.digits = sig_digits
 
 unc_background_wv = Uncertainty("total uncertainty", is_symmetric=True)
 unc_background_wv.values = histo_bkg_wv["dy"]
+unc_background_wv.digits = 1
 background_wv.add_uncertainty(unc_background_wv)
 
 tableWV.add_variable(mmed_wv)
@@ -439,6 +463,7 @@ mmed_zv.values = histo_vjet_wv["x"]
 # y-axis: N events
 data_zv = Variable("Number of data events", is_independent=False, is_binned=False, units="")
 data_zv.values = histo_data_zv["y"]
+data_zv.digits = sig_digits
 
 #unc_data_zv = Uncertainty("Poisson errors", is_symmetric=True)
 #unc_data_zv.values = histo_data_zv["dy"]
@@ -446,21 +471,27 @@ data_zv.values = histo_data_zv["y"]
 
 vvjjqcd_zv = Variable("Number of QCD VV events", is_independent=False, is_binned=False, units="")
 vvjjqcd_zv.values = histo_vvjjqcd_zv["y"]
+vvjjqcd_zv.digits = sig_digits
 
 vjet_zv = Variable("Number of V+jets events", is_independent=False, is_binned=False, units="")
 vjet_zv.values = histo_vjet_zv["y"]
+vjet_zv.digits = sig_digits
 
 vvjj_zv = Variable("Number of SM EV VV events", is_independent=False, is_binned=False, units="")
 vvjj_zv.values = histo_vvjj_zv["y"]
+vvjj_zv.digits = sig_digits
 
 top_zv = Variable("Number of top quark events", is_independent=False, is_binned=False, units="")
 top_zv.values = histo_top_zv["y"]
+top_zv.digits = sig_digits
 
 background_zv = Variable("Number of background events", is_independent=False, is_binned=False, units="")
 background_zv.values = histo_bkg_zv["y"]
+background_zv.digits = sig_digits
 
 unc_background_zv = Uncertainty("total uncertainty", is_symmetric=True)
 unc_background_zv.values = histo_bkg_zv["dy"]
+unc_background_zv.digits = 1
 background_zv.add_uncertainty(unc_background_zv)
 
 tableZV.add_variable(mmed_zv)
