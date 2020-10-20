@@ -1,0 +1,14 @@
+Source of uncertainty           $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W^\pm_{\mathrm{L}}$ $\mathrm{W}^\pm_{\mathrm{X}}\mathrm{W^\pm_{\mathrm{T}}$  $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W^\pm_{\mathrm{X}}$ $\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W^\pm_{\mathrm{T}}$
+--------------------------------------------------------------------------------------------
+Integrated-luminosity             3.2    1.8    1.9    1.8  
+Lepton-measurement                3.6   1.9    2.5    1.8  
+Jet-energy-scale-and-resolution   11      2.9    2.5    1.1  
+Pileup  		          0.9    0.1    1.0    0.3  
+B-tagging   	                  1.1    1.2    1.4    1.1  
+Nonprompt-lepton-rate            17      2.7    9.3    1.6  
+Trigger                           1.9    1.1    1.6    0.9  
+Limited-sample-size              38      3.9   14      5.7  
+Theory                            6.8    2.3   4.0   2.3  
+Total-systematic-uncertainty     44      6.6  18     7.0 
+Statistical-uncertainty           123    15    42    22    
+Total-uncertainty                130    16     46     23    

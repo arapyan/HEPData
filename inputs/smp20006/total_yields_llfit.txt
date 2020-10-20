@@ -1,0 +1,12 @@
+$\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{L}}$                   16.0  18.3   
+$\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{T}}$                 63.1  10.7 
+$\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W}^\pm_{\mathrm{T}}$                  110.1 18.1 
+QCD-WW                 13.8   1.6 
+Interference-WW        8.4    0.6 
+WZ                       63.3  7.8 
+ZZ                       0.7   0.2 
+Nonprompt               213.7  52.3 
+tVx                     7.1   2.2 
+Other-background        26.9  9.9 
+Total-SM                522.9  60.7 
+Data                    524 23

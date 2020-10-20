@@ -1,0 +1,4 @@
+$\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{L}}$     0.24 (-0.37,+0.40) 0.28 0.03
+$\mathrm{W}^\pm_{\mathrm{X}}\mathrm{W}^\pm_{\mathrm{T}}$     3.25 (-0.48,+0.50) 3.32 0.37
+$\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{X}}$     1.40 (-0.57,+0.60) 1.71 0.19
+$\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W}^\pm_{\mathrm{T}}$     2.03 (-0.50,+0.51) 1.89 0.21
