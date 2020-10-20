@@ -97,6 +97,7 @@ table5_yields0.add_qualifier("SQRT(S)", 13, "TeV")
 table5_unc0 = Uncertainty("total uncertainty", is_symmetric=True)
 table5_unc0.values = [float(x) for x in data5[:,2]]
 table5_yields0.add_uncertainty(table5_unc0)
+table5_yields0.add_qualifier("L$_{\mathrm{int}}$", 137, "fb$^{-1}$")
 
 table5.add_variable(table5_data)
 table5.add_variable(table5_yields0)
