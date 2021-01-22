@@ -28,7 +28,7 @@ table4.location = "Data from Table 4"
 
 table4.keywords["observables"] = ["Uncertainty"]
 table4.keywords["reactions"] = ["P P --> W W j j"]
-table4.keywords["phrases"] = ["VBS", "Polarized", "Same-sign WW"]
+table4.keywords["phrases"] = ["VBS", "Polarized", "Polarization", "Same-sign WW"]
 
 data4 = np.loadtxt("HEPData/inputs/smp20006/systematics.txt", dtype='string', skiprows=2)
 
@@ -82,7 +82,7 @@ table5.location = "Data from Table 5"
 
 table5.keywords["observables"] = ["Events"]
 table5.keywords["reactions"] = ["P P --> W W j j"]
-table5.keywords["phrases"] = ["VBS", "Polarized", "Same-sign WW"]
+table5.keywords["phrases"] = ["VBS", "Polarized", "Polarization", "Same-sign WW"]
 
 data5 = np.loadtxt("HEPData/inputs/smp20006/total_yields_llfit.txt", dtype='string')
 
@@ -110,12 +110,12 @@ for table5 in submission.tables:
 
 ### Begin Table 6
 table6 = Table("Table 6")
-table6.description = "Measured fiducial cross sections for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{L}}$ and $\mathrm{W}^\pm_{\mathrm{X}}\mathrm{W}^\pm_{\mathrm{T}}$  processes, and for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{X}}$ and $\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W}^\pm_{\mathrm{T}}$ processes for the helicity eigenstates defined in the WW center-of-mass frame. The combination of the statistical and systematic uncertainties is shown. The theoretical uncertainties include statistical, PDF, and LO scale uncertainties.  $\mathcal{B}$ is the branching fraction for $\mathrm{W}\mathrm{W} \\rightarrow \ell \\nu \ell' \\nu$. The fiducial region is defined by requiring two same-sign leptons with $p_{T}>20$, $|\eta|<2.5$, and $m_{ll}>20$, and two jets with $m_{jj}>500$ and $|\Delta \eta_{jj}|>2.5$. The jets at generator level are clustered from stable particles, excluding neutrinos, using the anti-kt clustering algorithm with R = 0.4, and are required to have $p_{T}>50$ and $|\eta|<4.7$. The jets within $\Delta R<0.4$ of the selected charged leptons are not included."
+table6.description = "Measured fiducial cross sections for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{L}}$ and $\mathrm{W}^\pm_{\mathrm{X}}\mathrm{W}^\pm_{\mathrm{T}}$  processes, and for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{X}}$ and $\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W}^\pm_{\mathrm{T}}$ processes for the helicity eigenstates defined in the WW center-of-mass frame. The combination of the statistical and systematic uncertainties is shown. $\mathcal{B}$ is the branching fraction for $\mathrm{W}\mathrm{W} \\rightarrow \ell \\nu \ell' \\nu$. The fiducial region is defined by requiring two same-sign leptons with $p_{T}>20$, $|\eta|<2.5$, and $m_{ll}>20$, and two jets with $m_{jj}>500$ and $|\Delta \eta_{jj}|>2.5$. The jets at generator level are clustered from stable particles, excluding neutrinos, using the anti-kt clustering algorithm with R = 0.4, and are required to have $p_{T}>50$ and $|\eta|<4.7$. The jets within $\Delta R<0.4$ of the selected charged leptons are not included. The theoretical predictions including the $\mathcal{O}(\\alpha_{s}\\alpha^6)$ and $\mathcal{O}(\\alpha^7)$ corrections to the \MGvATNLO LO cross sections, as described in arXiv:2009.09429, are also shown. The theoretical uncertainties include statistical, PDF, and LO scale uncertainties."
 table6.location = "Data from Table 6"
 
 table6.keywords["observables"] = ["Fiducial cross section"]
 table6.keywords["reactions"] = ["P P --> W W j j"]
-table6.keywords["phrases"] = ["VBS", "Polarized", "Same-sign WW"]
+table6.keywords["phrases"] = ["VBS", "Polarized", "Polarization", "Same-sign WW"]
 
 data6 = np.loadtxt("HEPData/inputs/smp20006/cross_sections_ww.txt", dtype='string')
 
@@ -151,12 +151,12 @@ for table6 in submission.tables:
 
 ### Begin Table 7
 table7 = Table("Table 7")
-table7.description = "Measured fiducial cross sections for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{L}}$ and $\mathrm{W}^\pm_{\mathrm{X}}\mathrm{W}^\pm_{\mathrm{T}}$  processes, and for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{X}}$ and $\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W}^\pm_{\mathrm{T}}$ processes for the helicity eigenstates defined in the parton-parton center-of-mass frame. The combination of the statistical and systematic uncertainties is shown. The theoretical uncertainties include statistical, PDF, and LO scale uncertainties.  $\mathcal{B}$ is the branching fraction for $\mathrm{W}\mathrm{W} \\rightarrow \ell \\nu \ell' \\nu$. The fiducial region is defined by requiring two same-sign leptons with $p_{T}>20$, $|\eta|<2.5$, and $m_{ll}>20$, and two jets with $m_{jj}>500$ and $|\Delta \eta_{jj}|>2.5$. The jets at generator level are clustered from stable particles, excluding neutrinos, using the anti-kt clustering algorithm with R = 0.4, and are required to have $p_{T}>50$ and $|\eta|<4.7$. The jets within $\Delta R<0.4$ of the selected charged leptons are not included."
+table7.description = "Measured fiducial cross sections for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{L}}$ and $\mathrm{W}^\pm_{\mathrm{X}}\mathrm{W}^\pm_{\mathrm{T}}$  processes, and for the $\mathrm{W}^\pm_{\mathrm{L}}\mathrm{W}^\pm_{\mathrm{X}}$ and $\mathrm{W}^\pm_{\mathrm{T}}\mathrm{W}^\pm_{\mathrm{T}}$ processes for the helicity eigenstates defined in the parton-parton center-of-mass frame. The combination of the statistical and systematic uncertainties is shown. $\mathcal{B}$ is the branching fraction for $\mathrm{W}\mathrm{W} \\rightarrow \ell \\nu \ell' \\nu$. The fiducial region is defined by requiring two same-sign leptons with $p_{T}>20$, $|\eta|<2.5$, and $m_{ll}>20$, and two jets with $m_{jj}>500$ and $|\Delta \eta_{jj}|>2.5$. The jets at generator level are clustered from stable particles, excluding neutrinos, using the anti-kt clustering algorithm with R = 0.4, and are required to have $p_{T}>50$ and $|\eta|<4.7$. The jets within $\Delta R<0.4$ of the selected charged leptons are not included. The theoretical predictions including the $\mathcal{O}(\\alpha_{s}\\alpha^6)$ and $\mathcal{O}(\\alpha^7)$ corrections to the \MGvATNLO LO cross sections, as described in arXiv:2009.09429, are also shown. The theoretical uncertainties include statistical, PDF, and LO scale uncertainties. "
 table7.location = "Data from Table 7"
 
 table7.keywords["observables"] = ["Fiducial cross section"]
 table7.keywords["reactions"] = ["P P --> W W j j"]
-table7.keywords["phrases"] = ["VBS", "Polarized", "Same-sign WW"]
+table7.keywords["phrases"] = ["VBS", "Polarized", "Polarization", "Same-sign WW"]
 
 data7 = np.loadtxt("HEPData/inputs/smp20006/cross_sections_pp.txt", dtype='string')
 
