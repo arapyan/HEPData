@@ -1,0 +1,8 @@
+A search for charged Higgs bosons produced in vector boson fusion processes and decaying into vector bosons, using proton-proton collisions at $\sqrt{s}=13$ TeV at the LHC, is reported. The data sample corresponds to an integrated luminosity of $137~\mathrm{fb}^{-1}$ collected with the CMS detector. 
+Events are selected by requiring two or three electrons or muons, 
+moderate missing transverse momentum, and two jets with a large rapidity separation 
+and a large dijet mass. No excess of events with respect to the standard model 
+background predictions is observed. Model independent upper limits at 95\% 
+confidence level are reported on the product of the cross section and branching fraction for vector boson fusion production 
+of charged Higgs bosons as a function of mass, from 200 to 3000 GeV. 
+The results are interpreted in the context of the Georgi--Machacek model.

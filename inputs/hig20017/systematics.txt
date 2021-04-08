@@ -1,0 +1,16 @@
+Source of uncertainty          $\Delta \mu$-background-only  $\Delta \mu$-$s_{\mathrm{H}}=1.0$-and-$m_{\mathrm{H}_{5}}=500~\mathrm{GeV}$
+--------------------------------------------------------------------------------------------
+Integrated-luminosity             0.002   0.019
+Pileup  		          0.001   0.001 
+Lepton-measurement                0.003   0.033 
+Trigger                           0.001   0.007 
+JES-and-JER                       0.003   0.006 
+B-tagging   	                  0.001   0.006 
+Nonprompt-rate                    0.002   0.002
+WW/WZ-rate                        0.014   0.015 
+Other-prompt-background-rate      0.002   0.015 
+Signal-rate                       0.000   0.064 
+Simulated-sample-size             0.005   0.005 
+Total-systematic-uncertainty      0.016   0.078 
+Statistical-uncertainty           0.021   0.044 
+Total-uncertainty                 0.027   0.090 
