@@ -192,8 +192,16 @@ Data_Fig4.values = histo0_Fig4["y"]
 hpp_Fig4 = Variable("Number of $\mathrm{H}^{\pm\pm}(500)\\rightarrow\mathrm{W}^{\pm}\mathrm{W}^{\pm}$ events", is_independent=False, is_binned=False, units="")
 hpp_Fig4.values = histo19_Fig4["y"]
 
+unc_hpp_Fig4 = Uncertainty("total uncertainty", is_symmetric=True)
+unc_hpp_Fig4.values = histo19_Fig4["dy"]
+hpp_Fig4.add_uncertainty(unc_hpp_Fig4)
+
 hp_Fig4 = Variable("Number of $\mathrm{H}^{\pm}(500)\\rightarrow\mathrm{W}^{\pm}\mathrm{Z}$ events", is_independent=False, is_binned=False, units="")
 hp_Fig4.values = histo21_Fig4["y"]
+
+unc_hp_Fig4 = Uncertainty("total uncertainty", is_symmetric=True)
+unc_hp_Fig4.values = histo21_Fig4["dy"]
+hp_Fig4.add_uncertainty(unc_hp_Fig4)
 
 #unc_data_Fig3a = Uncertainty("Poisson errors", is_symmetric=True)
 #unc_data_Fig3a.values = histo0_Fig3a["dy"]
